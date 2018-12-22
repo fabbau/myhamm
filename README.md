@@ -13,12 +13,12 @@ To run the project do the following
 
 ### Clone
 
-Clone this repo to your local machine with:  `https://github.com/fabbau-`
+Clone this repo to your local machine with:  `https://github.com/fabbau/myhamm`
 
 
 ### Setup
 
-> cd to +++++++++++++ and install dependencies using
+> cd to myhamm and install dependencies using
 
 ```shell
 $ npm install
@@ -33,10 +33,14 @@ $ ng serve -o
 # State & Todo's
 As it was my first Angular Project, I ran into several issues which caused me some headaches and took some time to accomplish. And I'm still hanging on some points.
 
-So far there is a list, that shows the active jobs. Next to the list is a panel where detailed information on a selected job ***should*** be displayed. And this is main **Todo** point. 
+So far there is a list(some more styling needed), that shows the active jobs. Next to the list is a panel where detailed information on a selected job ***should*** be displayed. And this is main **Todo** point. 
 - Displying the details of a selected job. 
+
+I tried in few ways, but had no luck so far.
 
 When this is done some 
 - styling on the singel elements
 
 has to be applied too.
+
+And finally it would also be nice to have a mobile friendly version.

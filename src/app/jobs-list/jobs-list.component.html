@@ -1,0 +1,22 @@
+<mat-nav-list>
+    <h3 matSubheader>Jobs total: {{jobsCount}} | active: {{jobsActive}}</h3>
+  <mat-list-item *ngFor="let job of jobs$">
+    <a matLine routerLink="/job-detail/{{job.id}}" [ngStyle]="{'display':job.state === 'inactive' ? 'none' : '' }">
+      <div class="list-header">
+        <img matListAvatar src={{job.thumbnail}} alt={{job.title}}>
+        <div class="list-title">
+          <h3 matLine class="llist-title"> {{job.title}} </h3>
+          <i class="material-icons">location_on</i>
+          <span>{{job.city}}</span>
+          <span *ngIf="checkUnreadMessages(job.counter.messages_unread)" class="icon">
+              {{job.counter.messages_unread}} <mat-icon matBadge="15">mail</mat-icon>
+          </span>
+        </div>
+      </div>
+      <p class="list-date">
+        <i class="material-icons">timer</i> <span>{{job.end_date | date}}</span>
+      </p>
+    </a>
+     
+  </mat-list-item>
+</mat-nav-list>

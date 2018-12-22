@@ -1,0 +1,12 @@
+<mat-grid-list cols=3 gutterSize="15px" rowHeight="35em">
+  <mat-grid-tile colspan="1">
+      <mat-grid-tile-header>Jobs List</mat-grid-tile-header>
+      <app-jobs-list class="mat-card"></app-jobs-list>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2">
+      <mat-grid-tile-header>Job Details</mat-grid-tile-header>
+      <div id="detail">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-grid-tile>
+</mat-grid-list>
